@@ -38,12 +38,13 @@ body {
     text-align: right;
     ul {
       list-style: none;
+      
       // display: inline-block;
     }
 
     a {
       text-decoration: none;
-      color: #e6e6e6;
+      color: #fff;
       font-size: 14px;
       padding: 8px 20px;
       transition: transform 1s ease;
@@ -61,7 +62,7 @@ body {
       &:hover {
         transition: 0.5s ease;
           // color: #ff523b;
-        box-shadow: 0 0 20px 0;
+        // box-shadow: 0 0 20px 0;
         
       }
     }
@@ -130,7 +131,7 @@ body {
 .slider-text {
   position: absolute;
   top: 40%; 
-  left: 20%; 
+  left: 30%; 
   transform: translate(-50%, -50%); 
   color: white;
   font-size: 2rem; 
@@ -148,7 +149,8 @@ body {
 }
 
 .knw {
-  padding: 10px 30px;
+  
+  padding: 8px 30px;
   color: #fff;
   background-color: transparent;
   text-decoration: none;
@@ -251,10 +253,12 @@ body {
 
 .small-container2 {
   background-color: #0271b1;
+  
 }
 
 .small-container3 {
   background-color: #8e2d8d;
+  height: 100vh;
 }
 
 //   next     grid
@@ -389,9 +393,11 @@ body {
       
 
       .c-p {
-        width: 1000px;
+        width: 1000px; 
         height: 250px;
         border: 3px solid rgb(35, 178, 235);
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
         margin-bottom: 50px;
         
 
@@ -426,9 +432,11 @@ body {
       flex-wrap: wrap;
 
       .col-money {
+        
         margin-top: 50px;
         text-align: center;
-        // padding: 30px;
+
+        
 
         h1 {
           font-size: 40px;
@@ -438,25 +446,159 @@ body {
   }
 }
 
+// ------------------------investers--------------------
+
+.invester-i {
+  margin-top: 100px;
+  max-width: 2000px;
+  margin-bottom: 50px;
+  
+      .invester-container-i {
+          margin: auto;
+          max-width: 1500px;
+          background-color: rgb(255, 255, 255);
+          padding-left: 75px;
+          padding-right:60px;
+          text-align: center;
+
+          img {
+            text-align: center;
+          }
+
+          h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 40px;
+          }
+
+          p {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 27px;
+            color: #777;
+          }
+          
+  
+          .row-i {
+              display: flex;
+              align-items: center;
+  
+              justify-content: center;
+              flex-wrap: wrap;
+              
+  
+              .col-2-i {
+  
+                  flex-basis:  50%;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+              
+                  
+                  
+  
+                  
+              }
+  
+              .col-2-i img {
+                  width: 600px;
+                  height: 450px;
+                  
+                  
+              }
+              
+  
+          }
+      }
+  }
+
+
+
+
+
+
+
+
+
+// ---------------carrers-----------------------------
+
+
+.carrers {
+  margin-top: 70px;
+
+  .small-carrers {
+      margin-top: 50px;
+      text-align: center;
+
+      .para-c {
+          font-size: 35px;
+          color: #777;
+         
+      }
+
+      .h1-c {
+          font-size: 50px;
+      }
+
+      .card-img {
+
+        .box {
+          width: 400px;
+          height: 200px;
+          border: 1px solid rgb(0, 0, 0);
+          background-color: #F3F3F3;
+          position: absolute;
+          right: 200px;
+          top: 6750px;
+
+          .small {
+            position: absolute;
+            left: 115px;
+            top: 100px;
+
+            i {
+              font-weight: 333;
+            }
+          }
+
+          h5 {
+            font-weight: 777;
+            margin-left: 20px;
+          }
+         
+        }
+      }
+  }
+}
+
+
 // opportunity
 
 .opportunity {
   margin-bottom: 100px;
+  margin-top: 50px;
 
   .small-container {
+    text-align: center;
     .oppo-c {
       margin-bottom: 30px;
-      font-size: 33px;
+      text-align: center;
+      font-size: 27px;
       color: #494646;
     }
 
-    a {
+    .a-b {
       
       padding: 10px 30px;
       border: solid 1px black;
       text-decoration: none;
       background-color: black;
       color: white;
+      // display: inline-block;
+      // position: absolute;
+      // left: 41%;
+      transition: 0.5s ease;
+
 
       &:hover {
         background-color: white;
@@ -468,95 +610,69 @@ body {
 
 // -----------------purple section-----------------------------
 
-$box-size: 200px;
-$gap: 1px;
-
-.purple {
-  height: 80vh; 
+.home-p {
+  margin-top: 50px;
   background-color: #963596;
-  width: 100%; 
+  margin-bottom: 40px;
 
-  .small-purple {
-    max-width: 2500px; 
-    margin: 0 auto; 
-    padding-left: 10px;
-    padding-top: 10px;
+  .small-container-p {
+    max-width: 1200px;
+    height: 500px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: auto;
+    background-color: #963596;
 
-    .row {
+    .row-p {
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
 
-      .col-2 {
+      .col-2-p {
+        flex-basis: 50%;
+        width: 500px;
+        margin-bottom: 30px;
+        margin-top: 50px;
 
-        min-width: 300px;
-        
+        .container-p {
 
-        .grid-container {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: repeat(2, auto);
-          gap: $gap;
-          width: 100%; 
-          margin: 0;
+          .box{
+            height: 200px;
+            width: 250px;
+            border: 1px solid rgb(138, 131, 131);
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            font-weight: 555;
+            
 
-          .box {
-            width: $box-size;
-            height: $box-size;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #963596;
-            border: 1px solid #ccc;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            font-size: 1.5em;
-            padding: 20px;
-            color: white;
-            &:hover{
-              background-color: #ccc;
+            &:hover {
+              background-color: #b87fbb;
             }
           }
         }
 
-        
-      }
-
-      .col-2 {
-
-        .big-text {
-          font-size: 40px;
-          font-weight: 900;
+        .text-p {
+          font-size: 70px;
           color: white;
-          text-align: left;
-          padding: 70px;
         }
 
-        a{
-          font-size: 15px;
-          color: white;
-          padding: 10px 35px;
-          // display: inline-block;
-          border:  solid 1px black;
+        .pp-btn {
+          padding: 9px 30px;
           background-color: black;
-          position: relative;
-          left: -110px;
-          bottom: 100px;
+          border: 1px solid black;
+          text-decoration: none;
+          color: white;
           &:hover {
-            background-color:  #963596;
-            color:#000;
+            background: #963596;
+            color: black;
           }
-         
-          
-  
-          
-
         }
       }
     }
   }
 }
-
 
 // -------------------footer---------------------
 
@@ -565,14 +681,17 @@ $gap: 1px;
   margin-top: 30px;
 
   .footer-container {
-    max-width: 2100px;
+    max-width: 2000px;
 
     .row {
 
       .col-5 {
         text-align: left;
         margin-bottom: 30px;
-        flex-basis: 20%;
+        flex-basis: 5%;
+        padding-left: 50px;
+        padding-right: 50px;
+        
         // padding: 10px;
 
         h4 {
@@ -602,6 +721,7 @@ $gap: 1px;
 .copyright {
   position: absolute;
   color: #777;
+  left: 70px;
   
 }
 
@@ -609,10 +729,27 @@ $gap: 1px;
 // ------------drop-down---------------
 .select-country-region {
   position: absolute;
-  right: 110px;
-  border: solid 1px black;
-  padding: 10px 40px;
+  right: 60px;
+  // border: solid 1px black;
+  // padding: 10px 40px;
   color: #777;
+
+  .container {
+    max-width: 100px;
+    margin: 0 auto;
+    margin-right: 150px;
+    margin-bottom: 10Px;
+}
+
+.select-box{}
+.select-box select {
+    height: 42px;
+    padding: 8px 80px;
+    line-height: 22px;
+    font-size: 16px;
+
+    
+}
   
 
 }
@@ -670,3 +807,123 @@ input {
 
   
 }
+
+
+
+// ----------------home page slider-text-----------------------
+
+
+@media (max-width: 810px) {
+
+
+  .container1 {
+
+    .mslider {
+
+      .slider-text {
+
+        font-size: 25px;
+
+        .knw {
+          margin-top: 10px;
+        }
+        
+        
+      }
+    }
+  }
+
+}
+
+// -------------------------------
+
+
+@media (max-width: 640px) {
+
+
+  .container1 {
+
+    .mslider {
+
+      .slider-text {
+
+        font-size: 5px;
+
+        .knw {
+          margin-top: 10px;
+        }
+        
+
+        
+      }
+    }
+  }
+
+}
+
+
+
+// ------purple----------------
+
+
+
+@media (max-width: 1085px) {
+
+
+  .home-p {
+
+    .small-container-p {
+
+      height: 1000px;
+
+      
+    }
+  }
+
+}
+
+
+
+
+// ---------------careers----------------------   doubt???
+
+@media (max-width: 1147px) {
+
+
+  .carrers {
+
+    .small-carrers {
+
+      .carrers-img {
+        // width: 500px;
+        // height: 500px;
+      }
+
+      
+    }
+  }
+
+}
+
+
+@media (max-width: 1292px) {
+
+
+  .carrers {
+
+    .small-carrers {
+
+      .image-card {
+
+        .box {
+
+        }
+        
+      }
+
+      
+    }
+  }
+
+}
+
